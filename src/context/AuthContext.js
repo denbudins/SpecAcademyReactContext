@@ -5,7 +5,7 @@ const AuthContext = createContext();
 
 //Define provider
 const AuthProvider = (props) => {
-    const {isLogedIn, setIsLogedIn} = useState(false);
+    const [isLogedIn, setIsLogedIn] = useState(false);
 
     return(
         <AuthContext.Provider value={isLogedIn}>

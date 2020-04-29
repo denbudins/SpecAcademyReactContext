@@ -1,15 +1,15 @@
 import React, {useContext} from "react";
 
-import { AuthContext } from "../context/AuthContext";
+import {AuthContext} from "../context/AuthContext";
 
 const Article = (props) => {
-    const IsLogIn = useContext(AuthContext);
+    const isLoggedIn = useContext(AuthContext);
 
     return(
         <>
             <h2>Some article title...</h2>
             <p>Description text...</p>
-            {IsLogIn ? <button>Edit</button> : null}
+            {isLoggedIn ? <button>Edit</button> : null}
         </>
     );
 }
